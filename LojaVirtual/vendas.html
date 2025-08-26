@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            border-radius: 10px;
+            width: 40%;
+            margin: 50px auto;
+            background: grey;
+            padding: 0;
+        }
+
+        h1 {
+            color: lightgrey;
+            font-family: Verdana;
+        }
+
+        h2 {
+            font-family: Verdana;
+            color: lightcoral;
+        }
+
+        button, select {
+            border-radius: 5px;
+            height: 30px;
+            min-width: 50%;
+            max-width: 80%;
+            background: lightgrey;
+        }
+
+        button {
+            background: greenyellow;
+        }
+
+        span {
+            color: red;
+        }
+
+        .y1 {
+            background: lightgrey;
+        }
+
+        .y0 {
+            background: white;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<form action="parcelamento.php" method="post">
+    <h1>Compre um fusca</h1>
+
+    <h2>Apenas 12.999,99</h2>
+    <img src="https://i.redd.it/vy4no9x8azt31.png" width="232" height="154"> <br>
+    <select name="select" required>
+        <option value="" class="y0 bold">Selecione a opção desejada</option>
+        <option value="1" class="y1">1 parcela com 10% de desconto</option>
+        <option value="2" class="y0">2 parcelas</option>
+        <option value="3" class="y1">3 parcelas</option>
+        <option value="4" class="y0">4 parcelas</option>
+        <option value="5" class="y1">5 parcelas</option>
+        <option value="6" class="y0">6 parcelas</option>
+        <option value="7" class="y1">7 parcelas</option>
+        <option value="8" class="y0">8 parcelas</option>
+        <option value="9" class="y1">9 parcelas</option>
+        <option value="10" class="y0">10 parcelas</option>
+        <option value="11" class="y1">11 parcelas com 2.29% de juros ao mês</option>
+        <option value="12" class="y0">12 parcelas com 2.29% de juros ao mês</option>
+    </select>
+    <br><br>
+    <button type="submit" name="preco" value="<?php echo $valor; ?>">Comprar</button>
+    <br><br>
+</form>
+</body>
+</html>
+
