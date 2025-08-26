@@ -1,0 +1,28 @@
+
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: tomato;
+    color: white;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+nav {
+    background-color: rgba(235,235,235, 0.8);
+    text-align: center;
+}
+
+form div label {
+    padding-left: 2.5%
+}
+
+.fullfill {
+    width: 100%;
+}
+
+.smoothBorder {
+    border-left: 2px solid rgba(75,75,75,0.2);
+    border-right: 2px solid rgba(75,75,75,0.2);
+}
