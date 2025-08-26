@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        div {
+            background: lightgrey;
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        input, button, select {
+            border-radius: 5px;
+            border: 1px solid darkgrey;
+            width: 40%;
+            height: 30px;
+        }
+
+        .green {
+            background: greenyellow;
+        }
+
+        .red {
+            background: orangered;
+        }
+
+        .invi {
+            color: lightgrey;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Caixa 2C1</title>
+</head>
+<body>
+
+<br>
+<h3>Calculando as Notas do Banco</h3><br>
+<div>
+    <form action="saque.php" method="post">
+        <label for="conta">Informe sua conta</label><br>
+        <input type="text" name="conta" id="conta" required><br><br>
+
+        <label for="senha">Informe sua senha</label><br>
+        <input type="password" name="senha" id="senha" required><br><br>
+
+        Escolha seu banco<br>
+        <select name="select" required>
+            <option value="">Escolha um banco</option>
+            <option value="1">Banco do Brasil</option>
+            <option value="2">Bradesco</option>
+            <option value="3">Caixa</option>
+            <option value="4">Itaú</option>
+            <option value="5">Santander</option>
+        </select><br><br>
+
+        <label for="numero">Informe o dinheiro a ser retirado</label><br>
+        <input type="number" name="numero" min=2 id="numero" required><br><br>
+        <button type="submit" class="green">Calcular</button> <button type="reset" class="red">Limpar</button><br>
+        <label class="invi">.</label>
+    </form>
+</div>
+</body>
+</html>
