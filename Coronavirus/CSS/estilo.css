@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: 6a7495;
+	max-width: 2000px;
+	height: 50px;
+	color: white;
+	font-size: 40;
+	font-family: verdana;
+	text-align: center;
+	padding: 2;
+}
