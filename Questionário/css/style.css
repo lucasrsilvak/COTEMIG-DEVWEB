@@ -1,0 +1,93 @@
+.container {
+    position: absolute;
+
+    width: 40%;
+
+    left: 50%;
+    top: 50%;
+
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+
+div {
+    background-color: tomato;
+    color: white;
+}
+
+form {
+    border: 3px solid white;
+    width: 90%;
+
+    margin-top: 20px;
+    margin-left: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+label {
+    font-family: Montserrat;
+    font-weight: bold;
+    grid-area: label;
+}
+
+button {
+    margin-top: 1px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: tomato;
+    background-color: white;
+    width: 80%;
+}
+
+.miniContainer {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+input {
+    grid-area: input;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    border: 0.2px solid gray;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:focus, button:active {
+    outline: none
+}
+
+input:focus, input:active {
+    outline: none
+}
+
+.grid {
+    display: grid;
+    grid-template: "label input"
+    / 1fr 1fr;
+}
+.equal {
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.title {
+    align-self: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bold;
+}

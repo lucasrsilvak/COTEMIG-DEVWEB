@@ -1,0 +1,178 @@
+*{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    margin-left: 10%;
+    align-self: center;
+    width: 80%;
+}
+
+.container {
+    position: absolute;
+
+    width: 40%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.acer {
+    background-color: limegreen;
+}
+
+.erro {
+    color: black;
+    background-color: white;
+}
+
+.accomplishment {
+    margin-top: 5px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    font-size: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.useless {
+    color: tomato;
+}
+
+.enunciated {
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 12px;
+}
+
+.answer {
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+}
+
+.boardAnswers {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div {
+    background-color: tomato;
+    color: white;
+}
+
+form {
+    border: 3px solid white;
+    width: 90%;
+
+    margin-top: 20px;
+    margin-left: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+label {
+    font-family: Montserrat;
+    font-weight: bold;
+    grid-area: label;
+}
+
+button {
+    margin-top: 1px;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-weight: bold;
+    color: tomato;
+    background-color: white;
+    width: 80%;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: orangered;
+}
+
+button:focus {
+    outline-style: none;
+}
+
+.answer:hover {
+    border-color: black;
+    color: black;
+}
+
+.answer:active {
+    border-color: grey;
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+.useless:hover {
+    color: tomato;
+}
+
+.pagChanger {
+    width: 20%;
+    height: 40px;
+}
+
+.miniContainer {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+input {
+    grid-area: input;
+}
+
+.grid {
+    display: grid;
+    grid-template: "label input"
+    / 1fr 1fr;
+}
+.equal {
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.title {
+    align-self: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bold;
+    flex-grow: 2.5;
+}
